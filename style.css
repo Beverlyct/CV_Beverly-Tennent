@@ -42,6 +42,7 @@ nav {
     display: flex;
     align-items: center;
     transition: transform 0.3s ease;
+
 }
 
 #contact-links a:hover {
@@ -165,12 +166,20 @@ h2 {
 }
 
 /* contact section*/
-#contact a {
-    text-decoration: underline;
-    color: #9F7AEA;
+#contact p {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+#contact a {
+    text-decoration: underline;
+    color: #9F7AEA;
+    display: inline;
+    align-items: initial;
+    justify-content: initial;
 }
 
 #contact img {
@@ -181,15 +190,12 @@ h2 {
 #contact {
     position: relative;
     padding-bottom: 6rem;
-    /* Add some space for the arrow */
 }
 
 .scroll-to-top {
     position: absolute;
     left: 4rem;
-    /* Distance from left edge */
     bottom: 4rem;
-    /* Distance from bottom */
     cursor: pointer;
     transition: transform 0.3s ease;
     display: flex;
