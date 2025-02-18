@@ -6,3 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinks.classList.toggle("show");
     });
 });
+const scrollToTopBtn = document.querySelector(".scroll-to-top");
+
+if (scrollToTopBtn) {
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}

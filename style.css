@@ -32,17 +32,28 @@ nav {
     padding: 0 2rem;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #E9F1F7;
-    cursor: default;
+#contact-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+#contact-links a {
+    display: flex;
+    align-items: center;
     transition: transform 0.3s ease;
 }
 
-.logo:hover {
+#contact-links a:hover {
     transform: translateY(-2px);
 }
+
+#contact-links img {
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: brightness(0) invert(1);
+}
+
 
 .nav-links {
     list-style: none;
@@ -119,7 +130,7 @@ h2 {
 
 .project a {
     text-decoration: underline;
-    color: #2a9d8f;
+    color: #9F7AEA;
 }
 
 /* Skills Section */
@@ -156,7 +167,44 @@ h2 {
 /* contact section*/
 #contact a {
     text-decoration: underline;
-    color: #2a9d8f;
+    color: #9F7AEA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact img {
+    width: 2.5rem;
+    height: auto;
+}
+
+#contact {
+    position: relative;
+    padding-bottom: 6rem;
+    /* Add some space for the arrow */
+}
+
+.scroll-to-top {
+    position: absolute;
+    left: 4rem;
+    /* Distance from left edge */
+    bottom: 4rem;
+    /* Distance from bottom */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.scroll-to-top img {
+    width: 4rem;
+    height: 4rem;
+    filter: brightness(0) invert(0);
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-5px);
 }
 
 /* Call to Action Button */
@@ -212,5 +260,23 @@ footer {
 
     .menu-toggle {
         display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact-links {
+        gap: 1rem;
+    }
+
+    #contact-links img {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .scroll-to-top {
+        left: 4rem;
+        bottom: 4rem;
     }
 }
