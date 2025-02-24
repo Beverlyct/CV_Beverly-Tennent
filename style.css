@@ -205,7 +205,7 @@ h2 {
 
 #contact {
     position: relative;
-    padding-bottom: 6rem;
+    padding-bottom: 150px;
 }
 
 .scroll-to-top {
@@ -299,7 +299,7 @@ footer {
 
 @media (max-width: 768px) {
     .scroll-to-top {
-        left: 4rem;
         bottom: 4rem;
+        right: 4rem;
     }
 }
